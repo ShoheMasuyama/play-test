@@ -35,7 +35,7 @@ public class ApplicationTest {
 
     @Test
     public void renderTemplate() {
-        Content html = (Content) views.html.index.render("Your new application is ready.");
+        Content html = (Content) views.html.index.render("Your new application is ready3.");
         assertThat(contentType(html)).isEqualTo("text/html");
         assertThat(contentAsString(html)).contains("Your new application is ready.");
     }
